@@ -3,7 +3,7 @@
 $folder_source		= '1-mame_roms_all/';
 $folder_destination	= '2-mame_roms_compatible/';
 
-$supported_roms_file = file('supported_roms.txt');
+$supported_roms_file = file('mame_roms_supported.txt');
 
 foreach($supported_roms_file as $supported_rom_name){
 	$supported_roms[] = substr($supported_rom_name, 0, strpos($supported_rom_name, ' '));
